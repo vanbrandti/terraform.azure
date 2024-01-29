@@ -25,14 +25,8 @@ tasks:
 
       sudo apt-get install terraform
 
-  - name: verify_terraform_install
-    before: echo "Verify TF install"
-    command: |
       terraform -help
-      terraform -help plan
-
-
-
+      terraform -help plan      
       
 # vscode:
 #   extensions:
