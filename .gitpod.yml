@@ -1,0 +1,10 @@
+tasks:
+  - name: Versions
+    command: |
+      az login    
+      
+vscode:
+  extensions:
+    - hashicorp.terraform
+    - ms-azuretools.vscode-azureresourcegroups
+    - formulahendry.code-runner
