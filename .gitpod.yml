@@ -1,12 +1,9 @@
 tasks:
-  - name: install_azure_cli
+  - name: install_azure_cli_and_terraform
     before: echo "Install Azure CLI"
     command: |
       curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-  - name: install_terraform
-    before: echo "Install Terraform"
-    command: |
       sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
       wget -O- https://apt.releases.hashicorp.com/gpg | \
